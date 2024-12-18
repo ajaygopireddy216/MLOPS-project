@@ -6,6 +6,7 @@
 - Flowchart: https://whimsical.com/
 - MLOps Tool: https://www.evidentlyai.com/
 - MongoDB: https://account.mongodb.com/account/login
+- Data link: https://www.kaggle.com/datasets/moro23/easyvisa-dataset
 
 ## Git commands
 
@@ -16,7 +17,7 @@ git commit -m "Updated"
 
 git push origin main
 ```
-# mongodb+srv://<db_username>:<db_password>@cluster0.7lfy2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+# mongodb+srv://ajaygopireddy216:ajaygopireddy216@cluster0.7lfy2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
 # How to run ?
 ```bash
