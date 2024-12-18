@@ -2,7 +2,7 @@ import os
 import sys
 
 import numpy as np
-import dill
+import dill 
 import yaml
 from pandas import DataFrame
 
@@ -18,8 +18,6 @@ def read_yaml_file(file_path: str) -> dict:
     except Exception as e:
         raise USvisaException(e, sys) from e
     
-
-
 def write_yaml_file(file_path: str, content: object, replace: bool = False) -> None:
     try:
         if replace:
@@ -31,9 +29,6 @@ def write_yaml_file(file_path: str, content: object, replace: bool = False) -> N
     except Exception as e:
         raise USvisaException(e, sys) from e
     
-
-
-
 def load_object(file_path: str) -> object:
     logging.info("Entered the load_object method of utils")
 
@@ -49,8 +44,6 @@ def load_object(file_path: str) -> object:
     except Exception as e:
         raise USvisaException(e, sys) from e
     
-
-
 def save_numpy_array_data(file_path: str, array: np.array):
     """
     Save numpy array data to file
@@ -65,9 +58,6 @@ def save_numpy_array_data(file_path: str, array: np.array):
     except Exception as e:
         raise USvisaException(e, sys) from e
     
-
-
-
 def load_numpy_array_data(file_path: str) -> np.array:
     """
     load numpy array data from file
@@ -79,9 +69,6 @@ def load_numpy_array_data(file_path: str) -> np.array:
             return np.load(file_obj)
     except Exception as e:
         raise USvisaException(e, sys) from e
-
-
-
 
 def save_object(file_path: str, obj: object) -> None:
     logging.info("Entered the save_object method of utils")
@@ -96,8 +83,6 @@ def save_object(file_path: str, obj: object) -> None:
     except Exception as e:
         raise USvisaException(e, sys) from e
 
-
-
 def drop_columns(df: DataFrame, cols: list)-> DataFrame:
 
     """
@@ -105,6 +90,7 @@ def drop_columns(df: DataFrame, cols: list)-> DataFrame:
     df: pandas DataFrame
     cols: list of columns to be dropped
     """
+
     logging.info("Entered drop_columns methon of utils")
 
     try:
